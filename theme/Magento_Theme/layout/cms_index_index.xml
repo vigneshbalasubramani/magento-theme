@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+    <referenceContainer name="main">
+        <block name="home" template="Magento_Theme::html/home.phtml" />
+        <container htmlTag="div" htmlClass="home-page" before="footer">
+            <container htmlTag="div" htmlClass="box-wrapper">
+                    <block class="Magento\Cms\Block\Block" name="box-1">
+                       <arguments>
+                            <argument name="block_id" xsi:type="string">box-1</argument>
+                       </arguments>
+                    </block>
+                    <block class="Magento\Cms\Block\Block" name="box-2">
+                       <arguments>
+                            <argument name="block_id" xsi:type="string">box-2</argument>
+                       </arguments>
+                    </block>
+                    <block class="Magento\Cms\Block\Block" name="box-3">
+                       <arguments>
+                            <argument name="block_id" xsi:type="string">box-3</argument>
+                       </arguments>
+                    </block>
+                </container>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
